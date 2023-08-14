@@ -41,7 +41,8 @@ RSC=rc.exe
 # PROP Intermediate_Dir "Release"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /YX /FD /c
-# ADD CPP /nologo /MD /W3 /GX /O2 /I "SDL-1.2.14\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "USE_I386_ASM" /D "PLATFORM_WIN32" /YX /J /FD /c
+# ADD CPP /nologo /MD /W3 /GX /Ot /Ow /Oi /Op- /Oy /I "SDL-1.2.14\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "USE_I386_ASM" /D "PLATFORM_WIN32" /YX /J /FD /c
+# SUBTRACT CPP /Ox /Oa /Og /Os
 # ADD BASE RSC /l 0x409 /d "NDEBUG"
 # ADD RSC /l 0x409 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -171,7 +172,7 @@ TargetDir=.\Release
 InputPath=.\a_nasm.asm
 
 "$(TargetDir)\a_nasm.obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	nasmw.exe -f win32 -dC_IDENTIFIERS_UNDERSCORED -o "$(TargetDir)\a_nasm.obj" "$(InputPath)"
+	nasm.exe -f win32 -dC_IDENTIFIERS_UNDERSCORED -o "$(TargetDir)\a_nasm.obj" "$(InputPath)"
 
 # End Custom Build
 
@@ -182,7 +183,7 @@ TargetDir=.\Debug
 InputPath=.\a_nasm.asm
 
 "$(TargetDir)\a_nasm.obj" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
-	nasmw.exe -f win32 -dC_IDENTIFIERS_UNDERSCORED -o "$(TargetDir)\a_nasm.obj" "$(InputPath)"
+	nasm.exe -f win32 -dC_IDENTIFIERS_UNDERSCORED -o "$(TargetDir)\a_nasm.obj" "$(InputPath)"
 
 # End Custom Build
 
