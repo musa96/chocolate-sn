@@ -3,187 +3,12 @@
 <pre>
 <h1>Build Log</h1>
 <h3>
---------------------Configuration: Engine - Win32 Debug--------------------
+--------------------Configuration: sn - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP6E.bat" with contents
+Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP4E.tmp" with contents
 [
-@echo off
-nasmw.exe -f win32 -dC_IDENTIFIERS_UNDERSCORED -o ".\Debug\a_nasm.obj" ".\a_nasm.asm"
-]
-Creating command line "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP6E.bat"
-Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP6F.tmp" with contents
-[
-/nologo /MD /W3 /Gm /GX /ZI /Od /I "SDL-1.2.14\include" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "USE_I386_ASM" /D "PLATFORM_WIN32" /Fp"Debug/Engine.pch" /YX /Fo"Debug/" /Fd"Debug/" /J /FD /GZ /c 
-"C:\chocolate-sn\src\buildengine\a_visualc.c"
-"C:\chocolate-sn\src\buildengine\cache1d.c"
-"C:\chocolate-sn\src\buildengine\engine.c"
-"C:\chocolate-sn\src\buildengine\pragmas.c"
-"C:\chocolate-sn\src\buildengine\sdl_driver.c"
-]
-Creating command line "cl.exe @C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP6F.tmp" 
-Performing Custom Build Step on .\a_nasm.asm
-Creating command line "link.exe -lib /nologo /out:"Debug\Engine.lib"  ".\Debug\a_visualc.obj" ".\Debug\cache1d.obj" ".\Debug\engine.obj" ".\Debug\pragmas.obj" ".\Debug\sdl_driver.obj" ".\Debug\a_nasm.obj" "
-<h3>Output Window</h3>
-Compiling...
-a_visualc.c
-cache1d.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-engine.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(1749) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(1757) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(1779) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(1786) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2018) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2020) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2170) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2172) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2245) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2245) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2250) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2250) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2263) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2287) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2287) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2333) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2349) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2375) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2375) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2438) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2454) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2476) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2526) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2526) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2668) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2674) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2696) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2697) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2700) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2701) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2718) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2727) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2824) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2825) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2855) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2858) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(2947) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(3214) : warning C4244: '=' : conversion from 'long ' to 'unsigned short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(3272) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(3290) : warning C4013: 'loadpalettes' undefined; assuming extern returning int
-c:\chocolate-sn\src\buildengine\engine.c(3291) : warning C4013: 'loadlookup' undefined; assuming extern returning int
-c:\chocolate-sn\src\buildengine\engine.c(3292) : warning C4013: 'loadtrans' undefined; assuming extern returning int
-c:\chocolate-sn\src\buildengine\engine.c(3984) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(3985) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4016) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4021) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4031) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4035) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4039) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4043) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4045) : warning C4244: '=' : conversion from 'short ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4402) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(4867) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5145) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5377) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5378) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5423) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5569) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(5576) : warning C4244: 'function' : conversion from 'short ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6011) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6201) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6208) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6249) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6278) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6339) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6405) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6453) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6867) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6884) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6894) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6905) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6909) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(6987) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7032) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7071) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7082) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7514) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7659) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7932) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(7937) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8032) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8079) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8127) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8174) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8263) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8280) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8414) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8520) : warning C4244: 'function' : conversion from 'long ' to 'unsigned __int8 ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8542) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8542) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8569) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8791) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8797) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8799) : warning C4244: '-=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8800) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8802) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8803) : warning C4244: '-=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8816) : warning C4244: '-=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8817) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\engine.c(8821) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-pragmas.c
-c:\chocolate-sn\src\buildengine\engine.c(5576) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(6884) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(6987) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(7032) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(8280) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(8414) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(8520) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\engine.c(8791) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(62) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(63) : warning C4244: '=' : conversion from 'long ' to 'unsigned short ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(64) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(67) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(71) : warning C4244: '=' : conversion from 'long ' to 'unsigned short ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(81) : warning C4244: '=' : conversion from 'long ' to 'unsigned short ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.c(85) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-sdl_driver.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(1539) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(1755) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(1880) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(2093) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(2094) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\buildengine\sdl_driver.c(2166) : warning C4028: formal parameter 2 different from declaration
-c:\chocolate-sn\src\buildengine\sdl_driver.c(2173) : warning C4028: formal parameter 2 different from declaration
-c:\chocolate-sn\src\buildengine\sdl_driver.c(2194) : warning C4028: formal parameter 2 different from declaration
-Creating library...
-<h3>
---------------------Configuration: sn - Win32 Debug--------------------
-</h3>
-<h3>Command Lines</h3>
-Build : warning : failed to (or don't know how to) build 'C:\chocolate-sn\src\detect.h'
-
-Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP70.tmp" with contents
-[
-/nologo /MD /W3 /Gm /GX /ZI /Od /I "buildengine\SDL-1.2.14\include" /I ".\buildengine" /D "_DEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "USE_I386_ASM" /D "PLATFORM_WIN32" /Fp"Debug/sn.pch" /YX /Fo"Debug/" /Fd"Debug/" /J /FD /GZ /c 
+/nologo /MD /W3 /GX /Op /Oy /Ob2 /I "buildengine\SDL-1.2.14\include" /I ".\buildengine" /D "NDEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "USE_I386_ASM" /D "PLATFORM_WIN32" /Fp"Release/sn.pch" /YX /Fo"Release/" /Fd"Release/" /J /FD /c 
 "C:\chocolate-sn\src\ai.c"
 "C:\chocolate-sn\src\config.c"
 "C:\chocolate-sn\src\controls.c"
@@ -217,703 +42,703 @@ Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP70.tmp" with conten
 "C:\chocolate-sn\src\warp.c"
 "C:\chocolate-sn\src\weapon.c"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP70.tmp" 
-Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP71.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP4E.tmp" 
+Creating temporary file "C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP4F.tmp" with contents
 [
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib sdl.lib sdlmain.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/sn.pdb" /debug /machine:I386 /out:"Debug/sn.exe" /pdbtype:sept /libpath:"buildengine\SDL-1.2.14\lib" 
-".\Debug\ai.obj"
-".\Debug\config.obj"
-".\Debug\controls.obj"
-".\Debug\dat.obj"
-".\Debug\debug.obj"
-".\Debug\demo.obj"
-".\Debug\einfo.obj"
-".\Debug\epiend.obj"
-".\Debug\graphics.obj"
-".\Debug\init.obj"
-".\Debug\joys.obj"
-".\Debug\kbd.obj"
-".\Debug\levels.obj"
-".\Debug\map2d.obj"
-".\Debug\maps.obj"
-".\Debug\menus.obj"
-".\Debug\mirrors.obj"
-".\Debug\movers.obj"
-".\Debug\player.obj"
-".\Debug\qaf.obj"
-".\Debug\saveg.obj"
-".\Debug\seq.obj"
-".\Debug\sfx.obj"
-".\Debug\smix.obj"
-".\Debug\sn.obj"
-".\Debug\sound.obj"
-".\Debug\stbar.obj"
-".\Debug\str.obj"
-".\Debug\timer.obj"
-".\Debug\triggers.obj"
-".\Debug\warp.obj"
-".\Debug\weapon.obj"
-".\buildengine\Debug\Engine.lib"
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib sdl.lib sdlmain.lib /nologo /subsystem:console /incremental:no /pdb:"Release/sn.pdb" /machine:I386 /out:"Release/sn.exe" /libpath:"buildengine\SDL-1.2.14\lib" 
+".\Release\ai.obj"
+".\Release\config.obj"
+".\Release\controls.obj"
+".\Release\dat.obj"
+".\Release\debug.obj"
+".\Release\demo.obj"
+".\Release\einfo.obj"
+".\Release\epiend.obj"
+".\Release\graphics.obj"
+".\Release\init.obj"
+".\Release\joys.obj"
+".\Release\kbd.obj"
+".\Release\levels.obj"
+".\Release\map2d.obj"
+".\Release\maps.obj"
+".\Release\menus.obj"
+".\Release\mirrors.obj"
+".\Release\movers.obj"
+".\Release\player.obj"
+".\Release\qaf.obj"
+".\Release\saveg.obj"
+".\Release\seq.obj"
+".\Release\sfx.obj"
+".\Release\smix.obj"
+".\Release\sn.obj"
+".\Release\sound.obj"
+".\Release\stbar.obj"
+".\Release\str.obj"
+".\Release\timer.obj"
+".\Release\triggers.obj"
+".\Release\warp.obj"
+".\Release\weapon.obj"
+".\buildengine\Release\Engine.lib"
 ]
-Creating command line "link.exe @C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP71.tmp"
+Creating command line "link.exe @C:\DOCUME~1\mickey\LOCALS~1\Temp\RSP4F.tmp"
 <h3>Output Window</h3>
 Compiling...
 ai.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\ai.c(18) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\ai.c(32) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\ai.c(50) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\ai.c(73) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\ai.c(125) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\ai.c(10) : warning C4101: 'deltaz' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\ai.c(18) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\ai.c(32) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\ai.c(50) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\ai.c(73) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\ai.c(125) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\ai.c(10) : warning C4101: 'deltaz' : unreferenced local variable
 config.c
-c:\chocolate-sn\src\ai.c(18) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\ai.c(32) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\ai.c(50) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\ai.c(73) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\ai.c(125) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\config.c(23) : warning C4013: 'strstr' undefined; assuming extern returning int
+C:\chocolate-sn\src\ai.c(18) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\ai.c(32) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\ai.c(50) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\ai.c(73) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\ai.c(125) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\config.c(23) : warning C4013: 'strstr' undefined; assuming extern returning int
 controls.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\controls.c(46) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
-c:\chocolate-sn\src\controls.c(53) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\controls.c(46) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\chocolate-sn\src\controls.c(53) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
 dat.c
-c:\chocolate-sn\src\dat.c(69) : warning C4101: 'newhandle' : unreferenced local variable
-c:\chocolate-sn\src\dat.c(91) : warning C4101: 'handle' : unreferenced local variable
+C:\chocolate-sn\src\dat.c(69) : warning C4101: 'newhandle' : unreferenced local variable
+C:\chocolate-sn\src\dat.c(91) : warning C4101: 'handle' : unreferenced local variable
 debug.c
-c:\chocolate-sn\src\debug.c(5) : warning C4013: 'uninit' undefined; assuming extern returning int
-c:\chocolate-sn\src\debug.c(9) : warning C4013: 'exit' undefined; assuming extern returning int
+C:\chocolate-sn\src\debug.c(5) : warning C4013: 'uninit' undefined; assuming extern returning int
+C:\chocolate-sn\src\debug.c(9) : warning C4013: 'exit' undefined; assuming extern returning int
 demo.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
 einfo.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
 epiend.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\epiend.c(28) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\epiend.c(124) : warning C4013: 'startlevel' undefined; assuming extern returning int
-c:\chocolate-sn\src\epiend.c(146) : warning C4013: 'loadcredits' undefined; assuming extern returning int
-c:\chocolate-sn\src\epiend.c(212) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
-c:\chocolate-sn\src\epiend.c(213) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
-c:\chocolate-sn\src\epiend.c(318) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\epiend.c(442) : warning C4101: 'centre' : unreferenced local variable
-c:\chocolate-sn\src\epiend.c(440) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\epiend.c(523) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\epiend.c(28) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\epiend.c(124) : warning C4013: 'startlevel' undefined; assuming extern returning int
+C:\chocolate-sn\src\epiend.c(146) : warning C4013: 'loadcredits' undefined; assuming extern returning int
+C:\chocolate-sn\src\epiend.c(212) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\chocolate-sn\src\epiend.c(213) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
+C:\chocolate-sn\src\epiend.c(318) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\epiend.c(442) : warning C4101: 'centre' : unreferenced local variable
+C:\chocolate-sn\src\epiend.c(440) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\epiend.c(523) : warning C4554: '<<' : check operator precedence for possible error; use parentheses to clarify precedence
 graphics.c
-c:\chocolate-sn\src\epiend.c(231) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\epiend.c(523) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\graphics.c(129) : warning C4101: 'centre' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(128) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(188) : warning C4101: 'centre' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(187) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(244) : warning C4101: 'centre' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(243) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(317) : warning C4013: 'allocache' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(320) : warning C4013: 'setpalookupaddress' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(324) : warning C4013: 'error' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(342) : warning C4013: 'fixtransluscence' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(504) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(527) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(394) : warning C4101: 'longptr' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(570) : warning C4101: 'hz' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(636) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(639) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(647) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(650) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(658) : warning C4101: 'topy' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(701) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(701) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(767) : warning C4013: 'dointerpolations' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(806) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\graphics.c(829) : warning C4013: 'drawstatusbar' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(834) : warning C4013: 'restoreinterpolations' undefined; assuming extern returning int
-c:\chocolate-sn\src\graphics.c(763) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(763) : warning C4101: 'k' : unreferenced local variable
-c:\chocolate-sn\src\graphics.c(763) : warning C4101: 'l' : unreferenced local variable
+C:\chocolate-sn\src\epiend.c(231) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\epiend.c(523) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\graphics.c(129) : warning C4101: 'centre' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(128) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(188) : warning C4101: 'centre' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(187) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(244) : warning C4101: 'centre' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(243) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(317) : warning C4013: 'allocache' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(320) : warning C4013: 'setpalookupaddress' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(324) : warning C4013: 'error' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(342) : warning C4013: 'fixtransluscence' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(504) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(527) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(394) : warning C4101: 'longptr' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(570) : warning C4101: 'hz' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(636) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(639) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(647) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(650) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(658) : warning C4101: 'topy' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(701) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(701) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(767) : warning C4013: 'dointerpolations' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(806) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\graphics.c(829) : warning C4013: 'drawstatusbar' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(834) : warning C4013: 'restoreinterpolations' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(763) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(763) : warning C4101: 'k' : unreferenced local variable
+C:\chocolate-sn\src\graphics.c(763) : warning C4101: 'l' : unreferenced local variable
 init.c
-c:\chocolate-sn\src\graphics.c(32) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\graphics.c(636) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\graphics.c(647) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\graphics.c(758) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\init.c(125) : warning C4013: 'error' undefined; assuming extern returning int
-c:\chocolate-sn\src\init.c(128) : warning C4013: 'loadvoxels' undefined; assuming extern returning int
-c:\chocolate-sn\src\init.c(133) : warning C4013: 'initmovers' undefined; assuming extern returning int
-c:\chocolate-sn\src\init.c(81) : warning C4101: 'fil' : unreferenced local variable
-c:\chocolate-sn\src\init.c(160) : warning C4013: 'setvmode' undefined; assuming extern returning int
+C:\chocolate-sn\src\graphics.c(32) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\graphics.c(636) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\graphics.c(647) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\graphics.c(758) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\init.c(125) : warning C4013: 'error' undefined; assuming extern returning int
+C:\chocolate-sn\src\init.c(128) : warning C4013: 'loadvoxels' undefined; assuming extern returning int
+C:\chocolate-sn\src\init.c(133) : warning C4013: 'initmovers' undefined; assuming extern returning int
+C:\chocolate-sn\src\init.c(81) : warning C4101: 'fil' : unreferenced local variable
+C:\chocolate-sn\src\init.c(160) : warning C4013: 'setvmode' undefined; assuming extern returning int
 joys.c
-c:\chocolate-sn\src\init.c(94) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\init.c(94) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
 kbd.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\kbd.c(14) : warning C4013: 'initkeys' undefined; assuming extern returning int
-c:\chocolate-sn\src\kbd.c(28) : warning C4013: '_readlastkeyhit' undefined; assuming extern returning int
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\kbd.c(14) : warning C4013: 'initkeys' undefined; assuming extern returning int
+C:\chocolate-sn\src\kbd.c(28) : warning C4013: '_readlastkeyhit' undefined; assuming extern returning int
 levels.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\levels.c(87) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(134) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(162) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(168) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(169) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(174) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(175) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(188) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(199) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(200) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(213) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(244) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(252) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(255) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(267) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(268) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(287) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(291) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(336) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\levels.c(380) : warning C4013: 'error' undefined; assuming extern returning int
-c:\chocolate-sn\src\levels.c(384) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
-c:\chocolate-sn\src\levels.c(385) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
-c:\chocolate-sn\src\levels.c(386) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
-c:\chocolate-sn\src\levels.c(373) : warning C4101: 'tempbuf' : unreferenced local variable
-c:\chocolate-sn\src\levels.c(431) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\levels.c(441) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\levels.c(87) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(134) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(162) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(168) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(169) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(174) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(175) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(188) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(199) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(200) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(213) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(244) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(252) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(255) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(267) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(268) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(287) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(291) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(336) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\levels.c(380) : warning C4013: 'error' undefined; assuming extern returning int
+C:\chocolate-sn\src\levels.c(384) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
+C:\chocolate-sn\src\levels.c(385) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
+C:\chocolate-sn\src\levels.c(386) : warning C4022: 'clearbuf' : pointer mismatch for actual parameter 1
+C:\chocolate-sn\src\levels.c(373) : warning C4101: 'tempbuf' : unreferenced local variable
+C:\chocolate-sn\src\levels.c(431) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\levels.c(441) : warning C4101: 'i' : unreferenced local variable
 map2d.c
-c:\chocolate-sn\src\levels.c(169) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(175) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(200) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(244) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(252) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(268) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(287) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(291) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\levels.c(336) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\map2d.c(296) : warning C4013: 'gametext' undefined; assuming extern returning int
-c:\chocolate-sn\src\map2d.c(309) : warning C4013: 'putmessage' undefined; assuming extern returning int
-c:\chocolate-sn\src\map2d.c(100) : warning C4101: 'xoff' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(100) : warning C4101: 'yoff' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'dax' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'day' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'yspan' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(102) : warning C4101: 'yrepeat' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(102) : warning C4101: 'tilenum' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'cosang' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(102) : warning C4101: 'daang' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'sinang' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(100) : warning C4101: 'x4' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(102) : warning C4101: 'xrepeat' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(100) : warning C4101: 'l' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(101) : warning C4101: 'xspan' : unreferenced local variable
-c:\chocolate-sn\src\map2d.c(100) : warning C4101: 'y4' : unreferenced local variable
+C:\chocolate-sn\src\levels.c(169) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(175) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(200) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(244) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(252) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(268) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(287) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(291) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\levels.c(336) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\map2d.c(296) : warning C4013: 'gametext' undefined; assuming extern returning int
+C:\chocolate-sn\src\map2d.c(309) : warning C4013: 'putmessage' undefined; assuming extern returning int
+C:\chocolate-sn\src\map2d.c(100) : warning C4101: 'xoff' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(100) : warning C4101: 'yoff' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'dax' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'day' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'yspan' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(102) : warning C4101: 'yrepeat' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(102) : warning C4101: 'tilenum' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'cosang' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(102) : warning C4101: 'daang' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'sinang' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(100) : warning C4101: 'x4' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(102) : warning C4101: 'xrepeat' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(100) : warning C4101: 'l' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(101) : warning C4101: 'xspan' : unreferenced local variable
+C:\chocolate-sn\src\map2d.c(100) : warning C4101: 'y4' : unreferenced local variable
 maps.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\maps.c(308) : warning C4013: 'startend' undefined; assuming extern returning int
-c:\chocolate-sn\src\maps.c(361) : warning C4101: 'y' : unreferenced local variable
-c:\chocolate-sn\src\maps.c(361) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\maps.c(308) : warning C4013: 'startend' undefined; assuming extern returning int
+C:\chocolate-sn\src\maps.c(361) : warning C4101: 'y' : unreferenced local variable
+C:\chocolate-sn\src\maps.c(361) : warning C4101: 'i' : unreferenced local variable
 menus.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\menus.c(77) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\menus.c(111) : warning C4013: 'gametext' undefined; assuming extern returning int
-c:\chocolate-sn\src\menus.c(334) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\menus.c(526) : warning C4013: 'dopalettestuff' undefined; assuming extern returning int
-c:\chocolate-sn\src\menus.c(739) : warning C4013: 'intro' undefined; assuming extern returning int
-c:\chocolate-sn\src\menus.c(741) : warning C4013: 'intro2' undefined; assuming extern returning int
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\menus.c(77) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\menus.c(111) : warning C4013: 'gametext' undefined; assuming extern returning int
+C:\chocolate-sn\src\menus.c(334) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\menus.c(526) : warning C4013: 'dopalettestuff' undefined; assuming extern returning int
+C:\chocolate-sn\src\menus.c(739) : warning C4013: 'intro' undefined; assuming extern returning int
+C:\chocolate-sn\src\menus.c(741) : warning C4013: 'intro2' undefined; assuming extern returning int
 mirrors.c
-c:\chocolate-sn\src\menus.c(77) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\menus.c(490) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\mirrors.c(34) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\mirrors.c(35) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\mirrors.c(83) : warning C4013: 'analyzesprites' undefined; assuming extern returning int
-c:\chocolate-sn\src\mirrors.c(60) : warning C4101: 'tposz' : unreferenced local variable
-c:\chocolate-sn\src\mirrors.c(60) : warning C4101: 'k' : unreferenced local variable
+C:\chocolate-sn\src\menus.c(77) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\menus.c(490) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\mirrors.c(34) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\mirrors.c(35) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\mirrors.c(83) : warning C4013: 'analyzesprites' undefined; assuming extern returning int
+C:\chocolate-sn\src\mirrors.c(60) : warning C4101: 'tposz' : unreferenced local variable
+C:\chocolate-sn\src\mirrors.c(60) : warning C4101: 'k' : unreferenced local variable
 movers.c
-c:\chocolate-sn\src\mirrors.c(80) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\movers.c(144) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(307) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(308) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(313) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(318) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(319) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(324) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(334) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(335) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(340) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(345) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(346) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(351) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(366) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(368) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(369) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(379) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(381) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(382) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
-c:\chocolate-sn\src\movers.c(397) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(540) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(708) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(716) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(728) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(736) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(755) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(782) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(794) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(813) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(823) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(847) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(860) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(880) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(891) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(296) : warning C4101: 'dasector' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(297) : warning C4101: 'tempbuf' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(295) : warning C4101: 'dax' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(295) : warning C4101: 'day' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(296) : warning C4101: 'daang' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(946) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(969) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(992) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(993) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1007) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1040) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1173) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1297) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1299) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1322) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1347) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1382) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1378) : warning C4101: 'dax' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1378) : warning C4101: 'day' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1379) : warning C4101: 'daang' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1405) : warning C4101: 'templong' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1405) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\movers.c(1477) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1477) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1477) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1535) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1535) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1535) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1552) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1552) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1552) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1573) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1573) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1573) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1623) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1623) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1623) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1638) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1648) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1657) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1669) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1695) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1771) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1771) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1771) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1772) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1809) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1809) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1809) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1833) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1833) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1833) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1834) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1862) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1863) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1889) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1889) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1889) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1907) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1927) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1927) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1927) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1928) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1936) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1937) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(1940) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\movers.c(138) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(156) : warning C4700: local variable 'i' used without having been initialized
-c:\chocolate-sn\src\movers.c(397) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(540) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(716) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(728) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(736) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(755) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(782) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(794) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(813) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(823) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(847) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(860) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(880) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(891) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(946) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(969) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(969) : warning C4700: local variable 'angle' used without having been initialized
-c:\chocolate-sn\src\movers.c(992) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(993) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(992) : warning C4700: local variable 'angle' used without having been initialized
-c:\chocolate-sn\src\movers.c(1007) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1297) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1299) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1322) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1347) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1382) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1477) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1535) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1552) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1573) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1623) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1638) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1648) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1657) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1669) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocplayer.c
+C:\chocolate-sn\src\mirrors.c(80) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\movers.c(144) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(307) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(308) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(313) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(318) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(319) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(324) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(334) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(335) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(340) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(345) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(346) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(351) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(366) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(368) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(369) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(379) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(381) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(382) : warning C4244: '=' : conversion from 'short ' to 'char ', possible loss of data
+C:\chocolate-sn\src\movers.c(397) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(540) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(708) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(716) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(728) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(736) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(755) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(782) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(794) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(813) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(823) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(847) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(860) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(880) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(891) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(296) : warning C4101: 'dasector' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(297) : warning C4101: 'tempbuf' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(295) : warning C4101: 'dax' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(295) : warning C4101: 'day' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(296) : warning C4101: 'daang' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(946) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(969) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(992) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(993) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1007) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1040) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1173) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1297) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1299) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1322) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1347) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1382) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1378) : warning C4101: 'dax' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1378) : warning C4101: 'day' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1379) : warning C4101: 'daang' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1405) : warning C4101: 'templong' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1405) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\movers.c(1477) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1477) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1477) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1535) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1535) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1535) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1552) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1552) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1552) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1573) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1573) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1573) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1623) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1623) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1623) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1638) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1648) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1657) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1669) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1695) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1771) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1771) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1771) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1772) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1809) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1809) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1809) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1833) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1833) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1833) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1834) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1862) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1863) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1889) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1889) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1889) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1907) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1927) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1927) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1927) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1928) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1936) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1937) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(1940) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\movers.c(138) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(156) : warning C4700: local variable 'i' used without having been initialized
+C:\chocolate-sn\src\movers.c(397) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(540) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(708) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(716) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(728) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(736) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(755) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(782) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(794) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(813) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(823) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(847) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(860) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(880) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(891) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(946) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(969) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(969) : warning C4700: local variable 'angle' used without having been initialized
+C:\chocolate-sn\src\movers.c(992) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(993) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(992) : warning C4700: local variable 'angle' used without having been initialized
+C:\chocolate-sn\src\movers.c(1007) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1297) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1299) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1322) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1347) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1382) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1477) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1535) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1552) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1573) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1623) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1638) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1648) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1657) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1669) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocplayer.c
 olate-sn\src\movers.c(1695) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1771) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1772) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1809) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1833) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1834) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1862) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1863) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1889) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1907) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1927) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1928) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1936) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\movers.c(1937) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\player.c(150) : warning C4047: 'function' : 'unsigned char *' differs in levels of indirection from 'unsigned char (*)[80]'
-c:\chocolate-sn\src\player.c(150) : warning C4024: 'sprintf' : different types for formal and actual parameter 1
-c:\chocolate-sn\src\player.c(616) : warning C4013: 'getvalidvesamodes' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(654) : warning C4013: 'dopalettestuff' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(777) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(934) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(971) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(980) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(990) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1001) : warning C4013: 'operatelift' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(1003) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1015) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1017) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1029) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1049) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1069) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1079) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1080) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1090) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1108) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1136) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1239) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1269) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1276) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1304) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1313) : warning C4244: '-=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\player.c(1314) : warning C4244: '-=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\player.c(1218) : warning C4101: 'p' : unreferenced local variable
-c:\chocolate-sn\src\player.c(1415) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1425) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1431) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1454) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1503) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1536) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1542) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1553) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1554) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1555) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1577) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1578) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1595) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1635) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1650) : warning C4013: 'breakwindow' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(1661) : warning C4013: 'spawnglass' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(1668) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1693) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1694) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1707) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
-c:\chocolate-sn\src\player.c(1707) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1713) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1725) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1777) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1777) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(1781) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(2026) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\player.c(2034) : warning C4013: 'error' undefined; assuming extern returning int
-c:\chocolate-sn\src\player.c(660) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(971) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(980) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(990) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1003) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1015) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1017) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1029) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1049) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1069) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1080) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1090) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1108) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1136) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1239) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1269) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1276) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1304) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1415) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1425) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1431) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1454) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1503) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1536) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1542) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1577) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1578) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1595) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1635) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1668) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1693) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1694) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1707) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1713) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1725) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1777) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(1781) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\player.c(2026) : warning C4761: integral size mismatch in argument; conversion supplqaf.c
+C:\chocolate-sn\src\movers.c(1771) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1772) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1809) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1833) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1834) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1862) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1863) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1889) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1907) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1927) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1928) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1936) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\movers.c(1937) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\player.c(150) : warning C4047: 'function' : 'unsigned char *' differs in levels of indirection from 'unsigned char (*)[80]'
+C:\chocolate-sn\src\player.c(150) : warning C4024: 'sprintf' : different types for formal and actual parameter 1
+C:\chocolate-sn\src\player.c(616) : warning C4013: 'getvalidvesamodes' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(654) : warning C4013: 'dopalettestuff' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(777) : warning C4244: '+=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(934) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(971) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(980) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(990) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1001) : warning C4013: 'operatelift' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(1003) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1015) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1017) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1029) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1049) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1069) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1079) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1080) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1090) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1108) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1136) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1239) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1269) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1276) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1304) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1313) : warning C4244: '-=' : conversion from 'long ' to 'unsigned char ', possible loss of data
+C:\chocolate-sn\src\player.c(1314) : warning C4244: '-=' : conversion from 'long ' to 'unsigned char ', possible loss of data
+C:\chocolate-sn\src\player.c(1218) : warning C4101: 'p' : unreferenced local variable
+C:\chocolate-sn\src\player.c(1415) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1425) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1431) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1454) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1503) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1536) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1542) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1553) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1554) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1555) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1577) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1578) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1595) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1635) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1650) : warning C4013: 'breakwindow' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(1661) : warning C4013: 'spawnglass' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(1668) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1693) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1693) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1694) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1707) : warning C4244: '=' : conversion from 'long ' to 'unsigned char ', possible loss of data
+C:\chocolate-sn\src\player.c(1707) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1713) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1725) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1777) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1777) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(1781) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(2026) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\player.c(2034) : warning C4013: 'error' undefined; assuming extern returning int
+C:\chocolate-sn\src\player.c(660) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(971) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(980) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(990) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1003) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1015) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1017) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1029) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1049) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1069) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1080) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1090) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1108) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1136) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1239) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1269) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1276) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1304) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1415) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1425) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1431) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1454) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1503) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1536) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1542) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1577) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1578) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1595) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1635) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1668) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1693) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1694) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1707) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1713) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1725) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1777) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(1781) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\player.c(2026) : warning C4761: integral size mismatch in argument; conversion supplqaf.c
 ied
 saveg.c
-c:\chocolate-sn\src\qaf.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\qaf.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\saveg.c(30) : warning C4013: 'killallsfx' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(33) : warning C4013: 'kopen4load' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(34) : warning C4013: 'error' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(36) : warning C4013: 'klseek' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(38) : warning C4013: 'kdfread' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(41) : warning C4013: 'kclose' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(209) : warning C4013: 'putmessage' undefined; assuming extern returning int
-c:\chocolate-sn\src\saveg.c(28) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\saveg.c(28) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\saveg.c(225) : warning C4013: 'dfwrite' undefined; assuming extern returning int
+C:\chocolate-sn\src\qaf.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\qaf.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\saveg.c(30) : warning C4013: 'killallsfx' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(33) : warning C4013: 'kopen4load' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(34) : warning C4013: 'error' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(36) : warning C4013: 'klseek' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(38) : warning C4013: 'kdfread' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(41) : warning C4013: 'kclose' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(209) : warning C4013: 'putmessage' undefined; assuming extern returning int
+C:\chocolate-sn\src\saveg.c(28) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\saveg.c(28) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\saveg.c(225) : warning C4013: 'dfwrite' undefined; assuming extern returning int
 seq.c
 sfx.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\sfx.c(159) : warning C4013: 'allocache' undefined; assuming extern returning int
-c:\chocolate-sn\src\sfx.c(139) : warning C4101: 'rc' : unreferenced local variable
-c:\chocolate-sn\src\sfx.c(224) : warning C4101: 'fil' : unreferenced local variable
-c:\chocolate-sn\src\sfx.c(224) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\sfx.c(159) : warning C4013: 'allocache' undefined; assuming extern returning int
+C:\chocolate-sn\src\sfx.c(139) : warning C4101: 'rc' : unreferenced local variable
+C:\chocolate-sn\src\sfx.c(224) : warning C4101: 'fil' : unreferenced local variable
+C:\chocolate-sn\src\sfx.c(224) : warning C4101: 'i' : unreferenced local variable
 smix.c
-c:\chocolate-sn\src\sfx.c(164) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\sfx.c(236) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\smix.c(504) : warning C4018: '>' : signed/unsigned mismatch
+C:\chocolate-sn\src\sfx.c(164) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\sfx.c(236) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\smix.c(504) : warning C4018: '>' : signed/unsigned mismatch
 sn.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\sn.c(61) : warning C4013: 'drawend' undefined; assuming extern returning int
-c:\chocolate-sn\src\sn.c(50) : warning C4101: 'tempbuf' : unreferenced local variable
-c:\chocolate-sn\src\sn.c(257) : warning C4013: '_platform_init' undefined; assuming extern returning int
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\sn.c(61) : warning C4013: 'drawend' undefined; assuming extern returning int
+C:\chocolate-sn\src\sn.c(50) : warning C4101: 'tempbuf' : unreferenced local variable
+C:\chocolate-sn\src\sn.c(257) : warning C4013: '_platform_init' undefined; assuming extern returning int
 sound.c
-c:\chocolate-sn\src\sn.c(69) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\sn.c(69) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
 stbar.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\stbar.c(32) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\stbar.c(32) : warning C4101: 'j' : unreferenced local variable
 str.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\str.c(30) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\str.c(30) : warning C4101: 'i' : unreferenced local variable
 timer.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\timer.c(13) : warning C4013: 'updatesounds' undefined; assuming extern returning int
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\timer.c(13) : warning C4013: 'updatesounds' undefined; assuming extern returning int
 triggers.c
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\triggers.c(120) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\triggers.c(246) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(248) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(285) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(287) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(345) : warning C4013: 'putmessage' undefined; assuming extern returning int
-c:\chocolate-sn\src\triggers.c(429) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(436) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(449) : warning C4013: 'exitsecretlevel' undefined; assuming extern returning int
-c:\chocolate-sn\src\triggers.c(459) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(462) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(474) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(486) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(488) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(499) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(511) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(513) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(525) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(526) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(545) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(569) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(583) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(597) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\triggers.c(621) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\triggers.c(120) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\triggers.c(246) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(248) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(285) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(287) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(345) : warning C4013: 'putmessage' undefined; assuming extern returning int
+C:\chocolate-sn\src\triggers.c(429) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(436) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(449) : warning C4013: 'exitsecretlevel' undefined; assuming extern returning int
+C:\chocolate-sn\src\triggers.c(459) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(462) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(474) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(486) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(488) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(499) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(511) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(513) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(525) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(526) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(545) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(569) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(583) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(597) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\triggers.c(621) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
 warp.c
-c:\chocolate-sn\src\triggers.c(429) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(436) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(459) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(462) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(474) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(486) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(488) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(499) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(511) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(513) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(526) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(545) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(569) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(583) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(597) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\triggers.c(621) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\triggers.c(429) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(436) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(459) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(462) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(474) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(486) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(488) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(499) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(511) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(513) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(526) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(545) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(569) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(583) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(597) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\triggers.c(621) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
 weapon.c
-c:\chocolate-sn\src\warp.c(51) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\buildengine\pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\buildengine\pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
-c:\chocolate-sn\src\weapon.c(204) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(205) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(176) : warning C4101: 'angle' : unreferenced local variable
-c:\chocolate-sn\src\weapon.c(219) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(220) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(255) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(256) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(294) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(295) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(304) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(317) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(322) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(323) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(343) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(361) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(361) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(506) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(516) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(517) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
-c:\chocolate-sn\src\weapon.c(669) : warning C4101: 'j' : unreferenced local variable
-c:\chocolate-sn\src\weapon.c(762) : warning C4101: 'i' : unreferenced local variable
-c:\chocolate-sn\src\weapon.c(204) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(205) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(255) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(256) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(304) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(317) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(322) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(323) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(343) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(361) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(516) : warning C4761: integral size mismatch in argument; conversion supplied
-c:\chocolate-sn\src\weapon.c(517) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\warp.c(51) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\buildengine/pragmas.h(2519) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2523) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2527) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2531) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\buildengine/pragmas.h(2535) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+C:\chocolate-sn\src\weapon.c(204) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(205) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(176) : warning C4101: 'angle' : unreferenced local variable
+C:\chocolate-sn\src\weapon.c(219) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(220) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(255) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(256) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(294) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(295) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(304) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(317) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(322) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(323) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(343) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(361) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(361) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(506) : warning C4244: '=' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(516) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(517) : warning C4244: 'function' : conversion from 'long ' to 'short ', possible loss of data
+C:\chocolate-sn\src\weapon.c(669) : warning C4101: 'j' : unreferenced local variable
+C:\chocolate-sn\src\weapon.c(762) : warning C4101: 'i' : unreferenced local variable
+C:\chocolate-sn\src\weapon.c(204) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(205) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(255) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(256) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(304) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(317) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(322) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(323) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(343) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(361) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(516) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\chocolate-sn\src\weapon.c(517) : warning C4761: integral size mismatch in argument; conversion supplied
 Linking...
 
 
 
 <h3>Results</h3>
-sn.exe - 0 error(s), 762 warning(s)
+sn.exe - 0 error(s), 618 warning(s)
 </pre>
 </body>
 </html>
