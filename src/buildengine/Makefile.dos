@@ -57,7 +57,7 @@ WATCOM_INC_DIR = $(WATCOMDIR)\h
 INCLUDES = -i=$(WATCOM_INC_DIR)
 DEFINES = -dUSE_I386_ASM -dPLATFORM_DOS
 
-CFLAGS = $(INCLUDES) $(DEFINES) -w4 -we -e25 -ei -zq &
+CFLAGS = $(INCLUDES) $(DEFINES) -w4 -e25 -ei -zq &
          $(OPTIMIZEFLAGS) $(DEBUGFLAGS) -5r -bt=dos -mf 
 ASMFLAGS = $(INCLUDES) -mf -5r -w4 -we -e25 -zq
 
@@ -65,11 +65,11 @@ CC = wcc386.exe
 ASM = wasm.exe
 
 BUILDOBJS = a.obj bstub.obj build.obj cache1d.obj engine.obj &
-            multi_tcpip.obj dos_drvr.obj
-GAMEOBJS  = a.obj game.obj cache1d.obj engine.obj multi_tcpip.obj &
+            multi.obj dos_drvr.obj
+GAMEOBJS  = a.obj game.obj cache1d.obj engine.obj multi.obj &
             dos_drvr.obj kdmeng.obj k.obj
 
-BUILDOBJS_COMMAS = a.obj,bstub.obj,build.obj,cache1d.obj,engine.obj,multi_tcpip.obj,dos_drvr.obj
+BUILDOBJS_COMMAS = a.obj,bstub.obj,build.obj,cache1d.obj,engine.obj,multi.obj,dos_drvr.obj
 GAMEOBJS_COMMAS  = a.obj,game.obj,cache1d.obj,engine.obj,multi_tcpip.obj,dos_drvr.obj,kdmeng.obj,k.obj
 
 all : project .SYMBOLIC
@@ -77,16 +77,16 @@ all : project .SYMBOLIC
 project : build.exe game.exe .SYMBOLIC
 
 clean : .SYMBOLIC
-	erase *.obj
-	erase *.exe
-	erase *.o
-	erase *~
+        erase *.obj
+        erase *.exe
+        erase *.o
+        erase *~
 
 .asm.obj : .AUTODEPEND
-	*$(ASM) $[* $(ASMFLAGS)
+        *$(ASM) $[* $(ASMFLAGS)
 
 .c.obj :  .AUTODEPEND
-	*$(CC) $[* $(CFLAGS)
+        *$(CC) $[* $(CFLAGS)
 
 build.exe : $(BUILDOBJS) .AUTODEPEND
  @%write build.lk1 NAME build

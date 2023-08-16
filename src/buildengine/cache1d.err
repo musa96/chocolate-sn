@@ -1,0 +1,3 @@
+cache1d.c(192): Warning! W131: No prototype found for function 'assert'
+cache1d.c(192): Warning! W308: The function 'assert' without prototyped parameters called
+cache1d.c(192): Note! I2002: 'assert' defined in: cache1d.c(192)
