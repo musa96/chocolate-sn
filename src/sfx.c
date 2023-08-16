@@ -1,3 +1,6 @@
+#if PLATFORM_DOS
+#include <i86.h>
+#endif
 #include "sn.h"
 #include "debug.h"
 #include "config.h"
@@ -143,6 +146,10 @@ void initsfx(void)
 	else j = 39;
 	if (sfxcard == 1)
 	{		
+#if PLATFORM_DOS
+		if (!detect_settings(&base, &irq, &dma8, &dma16))
+			error("initsfx(): Cannot detect settings for Sound Blaster", 9209);
+#endif
 		if (!init_sb(base, irq, dma8, dma16))
 			error("initsfx(): Sound Blaster did not initialize", 9210);
 
@@ -235,6 +242,12 @@ void playsfx(int sfx, int index, int vol)
 		case 1:
 		start_sound(soundptr[sfx], index, vol, OFF);
 		break;
+		case 2:
+		pcsfx = sfx;
+		curnote = 0;
+		pcstics = 0;
+		pcsplaying = 1;
+		break;
 	}
 }
 
@@ -244,6 +257,12 @@ void killsfx(int index)
 	{
 		case 1:
 		stop_sound(index);
+		break;
+		case 2:
+#if PLATFORM_DOS
+		pcsplaying = 0;
+		nosound();
+#endif
 		break;
 	}
 }
@@ -257,6 +276,12 @@ void killallsfx(void)
 		case 1:
 		for(i=0;i<1024+4096;i++)
 			stop_sound(i);
+		break;
+		case 2:
+#if PLATFORM_DOS
+		pcsplaying = 0;
+		nosound();
+#endif
 		break;
 	}
 }

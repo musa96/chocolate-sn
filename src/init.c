@@ -6,8 +6,11 @@
   ===================================================================*/
 #include <fcntl.h>
 #include <malloc.h>
+#if PLATFORM_DOS
+#include <i86.h>
 #include <dos.h>
 #include <io.h>
+#endif
 #include <sys\stat.h>
 #include <sys\types.h>
 #include "dat.h"
@@ -30,6 +33,22 @@
 
 extern char datfilename[MAXINDEXES][255];
 extern int numdatfiles;
+
+
+#if PLATFORM_DOS
+struct meminfo {
+	unsigned LargestBlockAvail;
+	unsigned MaxUnlokcedPage;
+	unsigned LargestLockablePage;
+	unsigned LinAddrSpace;
+	unsigned NumFreePagesAvail;
+	unsigned NumPhysicalPagesFree;
+	unsigned TotalPhysicalPages;
+	unsigned FreeLinAddrSpace;
+	unsigned SizeOfPageFile;
+	unsigned Reserved[3];
+} MemInfo;
+#endif
 
 void printstr(short x, short y, char string[81], char attribute)
 {
@@ -80,6 +99,10 @@ void init(void)
 {
 	long i, fil;
 	char tempbuf[80];
+#if PLATFORM_DOS
+	union REGS regs;
+	struct SREGS sregs;
+#endif
 
 	switch (gamemode)
 	{
@@ -90,12 +113,34 @@ void init(void)
 		strcpy(tempbuf, PROG_ID);
 		break;
 	}
+#if PLATFORM_DOS
+	printstr(0,0,"                                                                                ",0x7E);
+#else	
 	printf("		");
-    printstr(40-(strlen(tempbuf)>>1),0,tempbuf,0x7E);
+#endif    
+	printstr(40-(strlen(tempbuf)>>1),0,tempbuf,0x7E);
+#if !PLATFORM_DOS	
 	printf("\n");
+#endif
 	printstr(0,24,"                           Copyright 2007-2017 Mickey Productions                   ",0x7E);
-	
+#if PLATFORM_DOS
+	memset(&sregs,0,sizeof(sregs));
+	sregs.es = FP_SEG(&MemInfo);
+	regs.x.edi = FP_OFF(&MemInfo);
+	int386x(0x31, &regs, &regs, &sregs);
+	MemInfo.LargestBlockAvail /= 1048576;
+	printf("\n%luMB memory available\n", MemInfo.LargestBlockAvail);
+	if (MemInfo.LargestBlockAvail < 5)
+	{
+		printf("You do not have enough memory to run\n");
+		printf("Shaw's Nightmare. We can let you continue\n");
+		printf("but do not complain if it crashes.\n");
+		printf("PRESS ANY KEY TO CONTINUE\n");
+		getch();
+	}
+#else
 	printf("\n");
+#endif
 	if (loadconfig() != 0)
 	{
 		printf("Error opening configuration. Please run SETUP.\n");

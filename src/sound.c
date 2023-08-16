@@ -1,3 +1,6 @@
+#if PLATFORM_DOS
+#include <i86.h>
+#endif
 #include "config.h"
 #include "sn.h"
 #include "sound.h"
@@ -116,23 +119,96 @@ int gamemusic2[] =
 };
 void initsound(void)
 {
+	char tempbuf[80];
+
+#if USE_SDL
 	SDL_Init(SDL_INIT_AUDIO);
+#endif
 	initsfx();
+#if PLATFORM_DOS
+	if (musicsource)
+	{
+		if (initmmd(musicsource) == -1)
+		{
+			strcpy(tempbuf, "Music driver did not initialize");
+			if (musicsource > 1)
+				strcat(tempbuf, "\nMake sure the MPU port is 330.");
+			error(tempbuf, 9211);
+		}
+		if (musicsource > 1)
+		{
+			if (musicsource == 2)
+				strcpy(tempbuf, "INITMT.SNG");
+			else
+				strcpy(tempbuf, "INITGM.SNG");
+			loadsong(tempbuf);
+			musicloop = 0;
+			musicstatus = 1;
+			while (musicstatus == 1);
+		}
+		setmusicvolume(musicvol);
+	}
+#endif
 }
 
 void uninitsound(void)
 {
 	sfxterm();
+#if PLATFORM_DOS	
+	if (sfxcard == 2) nosound();
+	if (musicsource) uninitmmd();
+#endif
 }
 
 void playsong(int musicid, int loop)
 {
+#if PLATFORM_DOS
+	char tempbuf[80], filename[13];
+
+	if (!musicsource) return;
+
+	if (musicid < 0 || musicid > NUMMUSIC)
+	{
+		sprintf(tempbuf, "Bad music number #%d", musicid);
+		error(tempbuf, 9213);
+	}
+	if (musicid < sng_s1)
+		sprintf(filename, "B%d.SNG", musicid+1);
+	else if (musicid < sng_Future)
+		sprintf(filename, "S%d.SNG", musicid - sng_b5);
+	else
+		sprintf(filename, "S_%s.SNG", sn2music[musicid-sng_Future]);
+
+	loadsong(filename);
+	musicloop = loop;
+	musicstatus = 1;
+#endif
 }
 
 void updatesounds(void)
 {
+#if PLATFORM_DOS
+	if (sfxcard == 2 && pcsplaying)
+	{
+		pcstics++;
+		if (pcstics > pcsound[pcsfx].bps / 8)
+		{
+			pcstics = 0;
+			curnote++;
+		}	
+		if (curnote >= pcsound[pcsfx].numnotes)
+		{
+			pcsplaying = 0;
+			nosound();
+		}
+		sound(pcsound[pcsfx].note[curnote]);
+		if (pcsound[pcsfx].note[curnote] == 0) nosound();
+	}
+	mmdupdate();
+#endif
 }
 
+#if !PLATFORM_DOS
 void setmusicvolume(int vol)
 {
 }
@@ -140,3 +216,4 @@ void setmusicvolume(int vol)
 void fademusic(void)
 {
 }
+#endif

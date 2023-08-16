@@ -254,7 +254,9 @@ int main(int argc, char *argv[])
 	warplevel = 1;
 	warpskill = Medium;
 	slot = -1;
+#if !PLATFORM_DOS
 	_platform_init(argc, argv, "Shaw's Nightmare", "SN");
+#endif
 	identifyversion(argc, argv);
 	addfile(soundfilename);
 	for(i=1;i<argc;i++)

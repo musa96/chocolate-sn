@@ -2,8 +2,10 @@
 
 /* лл SMIX.H лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл */
 
+#if !PLATFORM_DOS
 #include <SDL.h>
 #include <SDL_audio.h>
+#endif
 
 //#include <queue>
 //#include <cmath>
@@ -31,7 +33,9 @@ public:
     void wait();
 };*/
 
+#if !PLATFORM_DOS
 void audio_callback(void*, Uint8*, int);
+#endif
 
 #define TRUE  1
 #define FALSE 0

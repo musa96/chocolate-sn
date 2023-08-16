@@ -1,3 +1,7 @@
+#if PLATFORM_DOS
+#include "mmd.h"
+#endif
+
 extern int pcstics, curnote;
 extern int musicvol;
 extern int gamemusic[];

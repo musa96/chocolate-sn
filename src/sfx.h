@@ -1,4 +1,7 @@
 #include "smix.h"
+#if PLATFORM_DOS
+#include "detect.h"
+#endif
 
 #define MAXPCNOTES 256
 
